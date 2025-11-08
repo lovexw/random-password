@@ -171,6 +171,16 @@
             opacity: 0.5;
             cursor: not-allowed;
             transform: none;
+            pointer-events: none;
+        }
+
+        .action-buttons button:not(:disabled) {
+            pointer-events: auto;
+        }
+
+        .action-buttons button:disabled:hover {
+            transform: none;
+            box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3);
         }
         
         .warning {
